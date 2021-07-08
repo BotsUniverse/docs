@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("https://sprin-g-reen.github.io/fonts/SpaceMono-Regular.ttf");
+}
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Space Mono", monospace;
+
+  width: 100%;
+  z-index: 0;
+}
+
+
+
+.head {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+
+  padding: 1em;
+
+  color: #9f9;
+  background-color: #202020;
+}
+.head .logo {
+  width: 4em;
+}
+.head .content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+
+  padding: .2em 1em;
+}
+.head .content .title {
+  display: flex;
+  font-size: 3em;
+  font-weight: bolder;
+}
+.head .content .title .first-letter {
+  display: block;
+  text-decoration: underline;
+  text-decoration-color: #73F;
+  animation-name: blink;
+  animation-duration: .4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes blink {
+  0% {
+    text-decoration-color: #73F;
+  }
+  50% {
+    text-decoration-color: #73F0;
+  }
+  100% {
+    text-decoration-color: #73F;
+  }
+}
+.head .content .sub-title {
+  color: #fff7;
+  text-transform: capitalize;
+}
+
+
+
+
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.main-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
