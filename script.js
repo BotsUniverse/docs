@@ -70,12 +70,12 @@ var commands = [
     "-mute": " silences a user. Can also be used as a reply, muting the replied to user.",
     "-tmute": "mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.",
     "-unmute": "unmutes a user. Can also be used as a reply, muting the replied to user.",
-    "/get": "",
-    "/notes": "",
-    "/saved": "",
-    "-save": "",
-    "-clear": "",
-    "-del": "",
+    "/get": "get the note with this notename",
+    "/notes": "list all saved notes in this chat",
+    "/saved": " saves notedata as a note with name notename",
+    "-save": "save the replied message as a note with name notename",
+    "-clear": "clear note with this name",
+    "-del": "deletes the message you replied to",
     "-purge": "",
     "/rules": "",
     "-setrules": "",
@@ -110,3 +110,10 @@ var commands = [
     "-welcomehelp": ""
   }
 ]
+
+
+/*
+A way to put things in body
+sample = "<p>+: -</p>"
+for (var item in commands[0]){document.body.innerHTML+=sample.replace("-", Object.values(commands[0])[Object.keys(commands[0]).indexOf(item)] ).replace("+", item)}
+*/
